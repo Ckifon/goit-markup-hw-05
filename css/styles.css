@@ -121,7 +121,9 @@ span {
 }
 
 .menu-link.current::after {
-    color: var(--secondary-text-color);
+    position: absolute;
+    top: 44px;
+    background-color: var(--secondary-text-color);
     display: block;
     width: 48px;
     height: 4px;
@@ -130,8 +132,21 @@ span {
     content: "";
 }
 
+.menu-link.current-portfolio::after {
+    position: absolute;
+    top: 44px;
+    background-color: var(--secondary-text-color);
+    display: block;
+    width: 72px;
+    height: 4px;
+    color: var(--secondary-text-color);
+    border-radius: 2px;
+    content: "";
+}
+
 .menu-link {
     color: black;
+    position: relative;
 }
 
 .mail-contact {
